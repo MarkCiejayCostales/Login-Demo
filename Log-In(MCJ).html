@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DEMO login</title>
+</head>
+<body>
+
+	<h1>Log-In Form By Mark Ciejay</h1>
+	<form>
+		Username: <input type="text" id="username"> <br>
+		Password: <input type="password" id="password"> <br>
+
+		<input type="submit" onclick="login()" value="LOGIN">
+	</form>
+
+
+<script type="text/javascript">
+
+	function login() {
+		var duname = "ucu";
+		var dpswrd = "admin";
+
+		uname = document.getElementById('username').value;
+		pswrd = document.getElementById('password').value;
+
+		if (duname == uname && dpswrd == pswrd) {
+			alert("Access Granted");
+		}
+
+		else if (duname != uname && dpswrd == pswrd) {
+			alert("Invalid Username");
+		}
+
+		else if (duname == uname && dpswrd != pswrd) {
+			alert("Invalid Password");
+		} else {
+			alert("Access Denied");
+		}
+
+	}
+
+</script>
+
+
+
+</body>
+</html>
